@@ -750,6 +750,7 @@ a:hover {
 .counter-box {
   color: #fff;
   text-align: center;
+  display: none;
 }
 
 .counter-ico {
@@ -787,6 +788,7 @@ a:hover {
 .work-img {
   display: block;
   overflow: hidden;
+  height: 530px;
 }
 
 .work-img img {
@@ -829,7 +831,7 @@ a:hover {
 ======================================*/
 
 .testimonials .owl-carousel .owl-item img {
-  width: auto;
+  width: 200px;
 }
 
 .testimonial-box {
