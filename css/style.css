@@ -127,7 +127,7 @@ a:hover {
 
 .sect-pt4 {
   padding-top: 4rem;
-  display: none;
+  /* display: none; */
 }
 
 .sect-mt4 {
@@ -872,6 +872,10 @@ a:hover {
 /*======================================
 //--//-->   BLOG
 ======================================*/
+
+#blog {
+  display: none;
+}
 
 .card-blog .card-body {
   position: relative;
