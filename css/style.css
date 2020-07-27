@@ -789,7 +789,7 @@ a:hover {
 .work-img {
   display: block;
   overflow: hidden;
-  height: 530px;
+  /* height: 530px; */
 }
 
 .work-img img {
