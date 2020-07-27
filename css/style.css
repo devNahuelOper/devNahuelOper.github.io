@@ -676,6 +676,10 @@ a:hover {
   text-indent: 1.5em;
 }
 
+#blurb {
+  font-size: 14px;
+}
+
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
