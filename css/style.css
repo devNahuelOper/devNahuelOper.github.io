@@ -705,6 +705,11 @@ a:hover {
   font-size: 12px;
 }
 
+#ajax, #premiere {
+  width: 25px;
+  vertical-align: -7px;
+}
+
 /*======================================
 //--//-->   SERVICES
 ======================================*/
