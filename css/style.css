@@ -672,6 +672,10 @@ a:hover {
 //--//-->   ABOUT
 ======================================*/
 
+.lead {
+  text-indent: 1.5em;
+}
+
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -705,9 +709,22 @@ a:hover {
   font-size: 12px;
 }
 
-#ajax, #premiere {
-  width: 25px;
-  vertical-align: -7px;
+#ajax {
+  width: 20px;
+  vertical-align: -4px;
+}
+#premiere {
+  width: 24px;
+  vertical-align: -5px;
+}
+#redux {
+  width: 17px;
+  vertical-align: -2px;
+}
+
+.project-bullets {
+  margin-inline-start: -28px;
+  font-size: 12px;
 }
 
 /*======================================
