@@ -741,7 +741,13 @@ a:hover {
 }
 
 #denizen-sub {
-  width: 443px;
+  width: 445px;
+}
+#stereo-sub {
+  width: 439px;
+}
+#vital-sub {
+  width: 383px;
 }
 
 /*======================================
