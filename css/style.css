@@ -731,6 +731,19 @@ a:hover {
   font-size: 12px;
 }
 
+#project-links {
+  font-size: 12px;
+}
+
+.project-sub {
+  display: flex;
+  justify-content: space-between;
+}
+
+#denizen-sub {
+  width: 443px;
+}
+
 /*======================================
 //--//-->   SERVICES
 ======================================*/
