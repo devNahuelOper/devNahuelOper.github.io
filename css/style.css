@@ -1125,6 +1125,12 @@ a:hover {
   margin-top: 4rem;
 }
 
+#form-status {
+  margin: 0 auto;
+  color: #0078ff;
+  font-weight: 600;
+}
+
 /*======================================
 //--//-->   FOOTER
 ======================================*/

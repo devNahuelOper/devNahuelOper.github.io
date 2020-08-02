@@ -757,7 +757,7 @@
                     </h5>
                   </div>
                   <div>
-                      <form action="https://formspree.io/xwkrybyy" method="post" role="form" class="contactForm">
+                    <form action="https://formspree.io/xwkrybyy" method="post" role="form" class="contactForm">
                       <div id="sendmessage">Your message has been sent. Thank you!</div>
                       <div id="errormessage"></div>
                       <div class="row">
@@ -786,8 +786,9 @@
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          <button type="submit" id="form-button" class="button button-a button-big button-rouded">Send Message</button>
                         </div>
+                        <p id="form-status"></p>
                       </div>
                     </form>
                   </div>
@@ -861,7 +862,55 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <!-- <script src="contactform/contactform.js"></script> -->
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+
+      // get the form elements defined in your form HTML above
+
+      var form = document.getElementsByClassName("contactForm")[0];
+      var button = document.getElementById("form-button");
+      var status = document.getElementById("form-status");
+
+      // Success and Error functions for after the form is submitted
+
+      function success() {
+        form.reset();
+        button.style = "display: none ";
+        status.innerHTML = "Your message has been sent. Thank you!";
+        window.reload();
+      }
+
+      function error() {
+        status.innerHTML = "Oops! There was a problem.";
+      }
+
+      // handle the form submission event
+
+      form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+    });
+
+    // helper function for sending an AJAX request
+
+    function ajax(method, url, data, success, error) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          success(xhr.response, xhr.responseType);
+        } else {
+          error(xhr.status, xhr.response, xhr.responseType);
+        }
+      };
+      xhr.send(data);
+    }
+  </script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
