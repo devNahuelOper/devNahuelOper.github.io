@@ -737,7 +737,7 @@ a:hover {
 
 .project-sub {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 #denizen-sub {

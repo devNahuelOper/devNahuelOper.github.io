@@ -156,9 +156,13 @@
                       </aside>
                     </span>
                     <ul class="project-bullets">
+                      <li>Built robust search functionality, by initializing state of a search term as an empty string, devising 
+                        a methods to handle user input (i.e. state change) and filter through all entity instances to find a match.
+                    </li>
                       <li>Enforced backend(Ruby on Rails) + frontend(React/Redux) user auth pattern.</li>
-                      <li>Pixel-perfect styling of multiple pages, media queries for scalability.</li>
-                      <li>Robust search functionality for DJs and Events, using multiple filters such as name, genre(s), location and more.</li>
+                      <li>Designed pixel-perfect renditions of multiple pages, using media queries for scalability.
+                        Denizen Confidant will look just as good on a smart phone as it does on a laptop.
+                      </li>
                     </ul>
                   </section>
                   <section class="project">
@@ -173,6 +177,9 @@
                       <li>Engineered event handlers to trigger & control a spinning frame with three random icons from the effects board.</li>
                       <li>Invoked a style change on matching effects board icons, alerting the user to hover there and clear the icon off the board.</li>
                     </ul>
+                      <!-- pointing to an empty string, then crafted a method to handle change in the search term state. Another group of methods
+                      handle filtering through all the instances of each entity, to find any matches with the current search term. When all
+                      the pieces are in place, the result is a dynamic unordered list of matches that renders on each user input. -->
                     <!-- <p id="description">Stereo Fidelity contains seven songs to choose from, and one-hundred sound effects that are each represented by a fun icon.
                       Utilizing the song's audio data, I programmed a frame to appear above the effects board on song start, which contains three
                       random icons out of the hundred below. For the duration of the song, the three icons will spin like a slot-machine, and the object of the game is
