@@ -689,9 +689,9 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.about-mf .about-img img {
+/* .about-mf .about-img img {
   margin-left: 10px;
-}
+} */
 
 .skill-mf span {
   color: #4e4e4e;
@@ -751,7 +751,7 @@ a:hover {
 }
 
 #resume-link {
-  margin-left: 9px;
+  /* margin-left: 9px; */
   line-height: 1.8em;
 }
 /*======================================
