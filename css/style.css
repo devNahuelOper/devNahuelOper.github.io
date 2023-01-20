@@ -119,6 +119,10 @@ a:hover {
   vertical-align: middle;
 }
 
+.link b {
+  font-weight: 500;
+}
+
 /*--/ Sections /--*/
 
 .sect-4 {
